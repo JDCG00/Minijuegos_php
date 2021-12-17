@@ -1,1 +1,1 @@
-# Registro_minijuegos
+# Minijuegos_php
