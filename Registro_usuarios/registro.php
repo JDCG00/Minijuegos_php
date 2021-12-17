@@ -1,6 +1,10 @@
 <?php
-    require("php/conexion.php");
-    $conexion = new mysqli(SERVIDOR, USUARIO, PW, BD);
+    require('php/operaciones.php');
+    
+    $operaciones = new Operaciones();
+
+    $operaciones -> altaRegistro();
+    
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -19,8 +23,13 @@
             <input class="controles" type="email" name="correo" placeholder="Correo">
             <input class="controles" type="text" name="usuario" placeholder="Usuario">
             <input class="controles" type="password" name="contrasena" placeholder="Contraseña">
-            <input class="controles" type="password" name="repetirContra" placeholder="Repita contraseña">
             <input class="botones" type="submit" name="" value="Registrar">
+            <fieldset>
+                <legend>
+                    Preferencias:
+
+                </legend>
+            </fieldset>
             <div id="div-a"><a href="../Inicio_sesion/inicio.php">Inicio</a></div>                  
         </form>
     </main>    

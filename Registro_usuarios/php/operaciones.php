@@ -1,16 +1,18 @@
 <?php
     require("php/conexion.php");
-    $conexion = new mysqli(SERVIDOR, USUARIO, PW, BD);
-
     class Operaciones{
+        
         function __construct(){
-            
+            $this -> conexion = new mysqli(SERVIDOR, USUARIO, PW, BD);
         }
-        function insertar(){
-            
+        function consultar($consulta){
+            return $this->conexion->query($consulta);
+        }
+        function altaRegistro(){
+            if ($_POST) {
+                $consulta = "INSERT INTO  usuarios (nombre, correo, passwd) VALUES('".$_POST['nombre']."','".$_POST['correo']."','".$_POST['contrasena']."');";
+                $resultado = $this-> consultar($consulta);
+            } 
         }
     }
-    
-
-
 ?>
