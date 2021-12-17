@@ -19,7 +19,7 @@
             <input class="controles" type="text" name="usuario" value="" placeholder="Usuario">
             <input class="controles" type="password" name="contrasena" value="" placeholder="Contraseña">
             <input class="botones" type="submit" name="" value="Ingresar">
-            <div id="div-a"><a href="php/crearRegistro.php">Crear cuenta</a></div>
+            <div id="div-a"><a href="../Registro_usuarios/registro.php">Crear cuenta</a></div>
         </form>
     </main>    
 </body>

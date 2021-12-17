@@ -7,3 +7,5 @@ INSERT INTO `minijuegos` (`idMinijuego`, `nombre`, `url_minijuego`) VALUES
 	(3, 'Mendeleiev', ''),
 	(4, 'Múltiplos', ''),
 	(5, 'Liga', '');
+
+
