@@ -13,10 +13,10 @@
             $consulta = "INSERT INTO  usuarios (nombre, correo, passwd) VALUES('".$_POST['nombre']."','".$_POST['correo']."','".$_POST['contrasena']."');";
             $this-> consultar($consulta);
             session_start();
-            /*$idUsuario = $this ->resultado ->fetch_assoc();*/
-           /* $_SESSION['idUsuario'] = 'Juan';
+            /* $idUsuario = $this ->consultar($consulta) ->fetch_assoc();
+            $_SESSION['idUsuario'] = $idUsuario['idUsuario'];
             echo $_SESSION['idUsuario'] .'<br>';
-            echo session_id();    */       
+            echo session_id();    */
         }
 
     }
