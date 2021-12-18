@@ -2,8 +2,9 @@
     require('php/operaciones.php');
     
     $operaciones = new Operaciones();
-
-    $operaciones -> altaRegistro();
+    if ($_POST) {
+        $operaciones -> altaRegistro();
+    }
     
 ?>
 <!DOCTYPE html>
@@ -18,12 +19,12 @@
 <body>
     <header></header>
     <main>
-        <form action="#" class="form-login" method="$_POST">
+        <form action="#" class="form-login" method="post">
             <h5>Registro</h5>
             <input class="controles" type="email" name="correo" placeholder="Correo">
-            <input class="controles" type="text" name="usuario" placeholder="Usuario">
+            <input class="controles" type="text" name="nombre" placeholder="Usuario">
             <input class="controles" type="password" name="contrasena" placeholder="Contraseña">
-            <input class="botones" type="submit" name="" value="Registrar">
+            <input class="botones" type="submit" name="registrar" value="Registrar">
             <fieldset>
                 <legend>
                     Preferencias:

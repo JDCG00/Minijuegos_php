@@ -9,10 +9,9 @@
             return $this->conexion->query($consulta);
         }
         function altaRegistro(){
-            if ($_POST) {
-                $consulta = "INSERT INTO  usuarios (nombre, correo, passwd) VALUES('".$_POST['nombre']."','".$_POST['correo']."','".$_POST['contrasena']."');";
-                $resultado = $this-> consultar($consulta);
-            } 
+            $consulta = "INSERT INTO  usuarios (nombre, correo, passwd) VALUES('".$_POST['nombre']."','".$_POST['correo']."','".$_POST['contrasena']."');";
+            $this-> consultar($consulta);           
         }
+        
     }
 ?>
