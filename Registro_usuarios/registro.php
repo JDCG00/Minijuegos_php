@@ -1,6 +1,6 @@
 <?php
     require('php/operaciones.php');
-    
+
     $operaciones = new Operaciones();
     if ($_POST) {
         $operaciones -> altaRegistro();
